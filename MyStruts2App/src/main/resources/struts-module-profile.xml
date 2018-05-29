@@ -5,15 +5,11 @@
 
 <struts>
 
-	<package name="user" namespace="/user" extends="struts-default">
-		<action name="welcome">
-			<result>/WEB-INF/Login.jsp</result>
-		</action>
-		<action name="login" class="com.app.LoginAction">
-			<result name="SUCCESS">/WEB-INF/Dashboard.jsp</result>
+	<package name="profile" namespace="/profile" extends="struts-default">
+	
+		<action name="getProfileDetails" class="com.app.profile.ProfileAction">
+			<result name="SUCCESS">/WEB-INF/profile/Profile.jsp</result>
 		</action>
 	</package>
-
-<include file="user/struts-module-*.xml"></include>
 
 </struts>
