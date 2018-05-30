@@ -9,11 +9,11 @@
 		<action name="welcome">
 			<result>/WEB-INF/Login.jsp</result>
 		</action>
-		<action name="login" class="com.app.LoginAction">
+		<action name="login" class="com.app.action.login.LoginAction">
 			<result name="SUCCESS">/WEB-INF/Dashboard.jsp</result>
 		</action>
 	</package>
 
-<include file="user/struts-module-*.xml"></include>
+<include file="struts-module-*.xml"></include>
 
 </struts>

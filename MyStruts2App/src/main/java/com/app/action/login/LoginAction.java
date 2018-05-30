@@ -1,6 +1,8 @@
-package com.app;
+package com.app.action.login;
 
-public class LoginAction {
+import com.opensymphony.xwork2.ActionSupport;
+
+public class LoginAction extends ActionSupport{
 
 	private String username;
 

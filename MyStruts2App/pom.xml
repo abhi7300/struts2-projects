@@ -21,6 +21,15 @@
 			<version>2.3.1.2</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.apache.struts/struts2-convention-plugin -->
+		<!-- This is needed to use annotations in struts -->
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-convention-plugin</artifactId>
+			<version>2.3.1.2</version>
+		</dependency>
+
+
 		<!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
 		<dependency>
 			<groupId>javax.servlet</groupId>

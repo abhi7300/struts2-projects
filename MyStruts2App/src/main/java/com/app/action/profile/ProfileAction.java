@@ -1,6 +1,6 @@
-package com.app.profile;
+package com.app.action.profile;
 
-public class ProfileAction {
+public class ProfileAction{
 
 	
 	// all struts logic here

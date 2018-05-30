@@ -7,7 +7,7 @@
 
 	<package name="profile" namespace="/profile" extends="struts-default">
 	
-		<action name="getProfileDetails" class="com.app.profile.ProfileAction">
+		<action name="getProfileDetails" class="com.app.action.profile.ProfileAction">
 			<result name="SUCCESS">/WEB-INF/profile/Profile.jsp</result>
 		</action>
 	</package>

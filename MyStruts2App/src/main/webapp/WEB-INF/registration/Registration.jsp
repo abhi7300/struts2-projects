@@ -23,7 +23,7 @@
 	<s:form action="register">
 		<s:textfield name="userId" label="Username" />
 		<s:password name="password" label="Password" />
-		<s:textfield name="reEnteredPassword" label="Password" />
+		<s:textfield name="reEnteredPassword" label="Re enter Password" />
 		<s:textfield name="firstname" label="firstname" />
 		<s:textfield name="lastname" label="lastname" />
 		<s:textfield name="email" label="email" />
