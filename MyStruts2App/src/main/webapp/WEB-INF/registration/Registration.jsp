@@ -1,7 +1,9 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib prefix="s" uri="/struts-tags"%>
 <html>
-<head></head>
+<head>
+<s:head />
+</head>
 <body>
 	<h1>Struts 2 App - Registration Page</h1>
 
@@ -24,7 +26,7 @@
 		<s:textfield name="userId" label="Username" />
 		<s:password name="password" label="Password" />
 		<s:textfield name="reEnteredPassword" label="Re enter Password" />
-		<s:textfield name="firstname" label="firstname" />
+		<s:textfield name="firstname" key="global.firstname" />
 		<s:textfield name="lastname" label="lastname" />
 		<s:textfield name="email" label="email" />
 		<s:textfield name="phone" label="phone" />
