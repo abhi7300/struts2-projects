@@ -36,6 +36,7 @@
 		
 		<action name="login" class="com.app.action.login.LoginAction">
 			<interceptor-ref name="globalInterceptor" />
+			<!-- <exception-mapping exception="com.company.SecurityException" result="login"/> -->  <!-- example entry -->
 			<result name="SUCCESS">/WEB-INF/Dashboard.jsp</result>
 		</action>
 
