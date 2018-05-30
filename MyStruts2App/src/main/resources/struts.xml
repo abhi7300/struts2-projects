@@ -10,11 +10,11 @@
 
 		<interceptors>
 			<interceptor name="globalInterceptor"
-				class="com.app.interceptors.GlobalInterceptor" />
+				class="com.app.interceptors.GlobalInterceptor" />   <!-- defining a custom interceptor -->
 		</interceptors>
 
 		<action name="welcome">
-			<interceptor-ref name="globalInterceptor" />
+			<interceptor-ref name="globalInterceptor" />       <!-- using the custom interceptor -->
 			<result>/WEB-INF/Login.jsp</result>
 		</action>
 		<action name="login" class="com.app.action.login.LoginAction">
@@ -26,8 +26,8 @@
 	</package>
 
 
-	<constant name="struts.custom.i18n.resources" value="global" />
+	<constant name="struts.custom.i18n.resources" value="global" /> <!-- for Localization -->
 
-	<include file="struts-module-*.xml"></include>
+	<include file="struts-module-*.xml"></include> <!-- for including struts config files -->
 
 </struts>
