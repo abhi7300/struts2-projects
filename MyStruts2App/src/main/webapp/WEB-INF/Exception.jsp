@@ -3,10 +3,10 @@
 <html>
 <head></head>
 <body>
-	<h1>Struts 2 App - Index</h1>
+	<h1>Struts 2 App - Global Exception Page</h1>
 
 	<h2>
-		<a href="/user/welcome.action"/>
+		Go back to home <a href="/user/welcome.action"/>
 	</h2>
 
 </body>

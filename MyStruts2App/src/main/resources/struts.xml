@@ -7,16 +7,33 @@
 
 	<package name="user" namespace="/user" extends="struts-default">
 
-
 		<interceptors>
 			<interceptor name="globalInterceptor"
 				class="com.app.interceptors.GlobalInterceptor" />   <!-- defining a custom interceptor -->
 		</interceptors>
 
+
+		<global-results>
+			<result name="index" >/WEB-INF/Index.jsp</result>
+			<result name="Exception">/WEB-INF/Exception.jsp</result>
+			<result name="SQLException">/WEB-INF/SQLException.jsp</result>
+		</global-results>
+		
+
+		<global-exception-mappings>
+			<exception-mapping exception="java.sql.SQLException"
+				result="SQLException" />
+			<exception-mapping exception="java.lang.Exception"
+				result="Exception" />
+		</global-exception-mappings>
+
+
 		<action name="welcome">
 			<interceptor-ref name="globalInterceptor" />       <!-- using the custom interceptor -->
 			<result>/WEB-INF/Login.jsp</result>
 		</action>
+		
+		
 		<action name="login" class="com.app.action.login.LoginAction">
 			<interceptor-ref name="globalInterceptor" />
 			<result name="SUCCESS">/WEB-INF/Dashboard.jsp</result>
